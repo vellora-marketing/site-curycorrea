@@ -8,7 +8,7 @@ Site institucional da Cury Correa Corretora de Seguros (Brasília – DF). Feito
 | --- | --- |
 | `index.html` | Início: apresentação, números, seguros em destaque, diferenciais, como funciona, seguradoras parceiras |
 | `seguros.html` | Os 10 tipos de seguro, com atalhos e botão de cotação pelo WhatsApp |
-| `sobre.html` | Missão, história, diferenciais, seguradoras e programa de indicação |
+| `sobre.html` | Missão, história, diferenciais, seguradoras |
 | `sinistros.html` | O que fazer em caso de sinistro, telefones de assistência 24h e perguntas frequentes |
 | `contato.html` | Canais de contato, formulário de cotação (abre o WhatsApp) e mapa |
 

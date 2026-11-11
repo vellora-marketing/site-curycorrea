@@ -732,6 +732,10 @@ em { font-style: normal; }
   background: var(--surface);
 }
 .logos img { width: 100%; max-width: 190px; height: 64px; object-fit: contain; }
+/* Logos mais quadrados precisam de mais altura para ter o mesmo peso visual */
+.logos img[src*="azul"],
+.logos img[src*="chubb"],
+.logos img[src*="bradesco"] { height: 76px; }
 
 /* =========================================================
    Chamada final – metade sobre o fundo claro, metade sobre o rodapé
