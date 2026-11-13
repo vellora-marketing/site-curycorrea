@@ -1131,8 +1131,8 @@ a.channel:hover { transform: translateY(-2px); box-shadow: 0 16px 36px -24px rgb
    ========================================================= */
 .js [data-reveal] {
   opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 0.8s var(--ease-out), transform 0.8s var(--ease-out);
+  transform: translateY(16px);
+  transition: opacity 0.4s var(--ease-out), transform 0.5s var(--ease-out);
 }
 .js [data-reveal].is-visible { opacity: 1; transform: none; }
 
@@ -1140,13 +1140,13 @@ a.channel:hover { transform: translateY(-2px); box-shadow: 0 16px 36px -24px rgb
   opacity: 0;
   transform: translateY(32px);
   filter: blur(6px);
-  transition: opacity 0.9s var(--ease-out), transform 0.9s var(--ease-out), filter 0.9s var(--ease-out);
-  transition-delay: calc(var(--i) * 60ms + 150ms);
+  transition: opacity 0.5s var(--ease-out), transform 0.5s var(--ease-out), filter 0.5s var(--ease-out);
+  transition-delay: calc(var(--i) * 35ms + 60ms);
 }
 .js [data-hero-side] {
   opacity: 0;
   transform: translateY(24px);
-  transition: opacity 0.9s var(--ease-out) 0.7s, transform 0.9s var(--ease-out) 0.7s;
+  transition: opacity 0.5s var(--ease-out) 0.35s, transform 0.5s var(--ease-out) 0.35s;
 }
 .is-loaded .hero__title .word,
 .is-loaded [data-hero-side] { opacity: 1; transform: none; filter: none; }

@@ -102,12 +102,12 @@
         entry.target.classList.add('is-visible');
         io.unobserve(entry.target);
       });
-    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.1 });
+    }, { rootMargin: '0px 0px 12% 0px', threshold: 0 });
     revealEls.forEach((el) => {
       // Pequeno atraso em cascata entre irmãos (cards lado a lado)
       const siblings = [...el.parentElement.children].filter((c) => c.hasAttribute('data-reveal'));
       const index = siblings.indexOf(el);
-      if (index > 0) el.style.transitionDelay = `${Math.min(index, 7) * 80}ms`;
+      if (index > 0) el.style.transitionDelay = `${Math.min(index, 4) * 40}ms`;
       io.observe(el);
     });
   }
@@ -146,8 +146,8 @@
     // Palavras: de transparente a sólido conforme o título sobe na tela
     scrollTitles.forEach(({ el, words }) => {
       const top = el.getBoundingClientRect().top;
-      const start = vh * 0.85;
-      const progress = clamp((start - top) / start);
+      const start = vh * 1;
+      const progress = clamp((start - top) / (start * 0.75));
       const soft = 4; // quantas palavras ficam "meio acesas" ao mesmo tempo
       const head = progress * (words.length + soft);
       words.forEach((w, i) => { w.style.opacity = clamp((head - i) / soft).toFixed(3); });
