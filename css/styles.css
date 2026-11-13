@@ -42,7 +42,7 @@
 *::before,
 *::after { box-sizing: border-box; }
 
-html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; overflow-x: hidden; }
 
 body {
   margin: 0;
@@ -1335,6 +1335,13 @@ a.channel:hover { transform: translateY(-2px); box-shadow: 0 16px 36px -24px rgb
   .site-footer__bottom { flex-direction: column; margin-top: 48px; }
 
   .wa-float { right: 16px; bottom: 16px; width: 56px; height: 56px; }
+
+  /* Botões ocupam a largura toda do bloco, em vez de ficarem colados à esquerda */
+  .btn:not(.btn--plain) { width: 100%; max-width: 100%; justify-content: space-between; }
+  .btn--ghost { justify-content: center; }
+  .btn__label { min-width: 0; text-align: left; white-space: normal; }
+  .form .btn { align-self: stretch; }
+  .section-foot .btn { width: 100%; }
 }
 
 /* ---------- Respeita quem desativa animações ---------- */
